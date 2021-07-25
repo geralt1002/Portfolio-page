@@ -1,15 +1,11 @@
 <template>
-  <div class="portfolio">
-    <ContentPortfolio />
-  </div>
+  <div class="portfolio"></div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ContentPortfolio from '@/layouts/content-portfolio.vue'
 
 export default {
-  name: 'Home',
-  components: { ContentPortfolio },
+  name: 'Portfolio',
 }
 </script>
