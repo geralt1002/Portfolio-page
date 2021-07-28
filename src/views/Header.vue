@@ -49,8 +49,8 @@
         </div>
       </nav>
     </header>
-    <section class="container-hero">
-      <div class="hero-box">
+    <section class="row container-hero">
+      <div class="col-12 hero-box">
         <h2 class="hero-title">Lorem Ipsum loremipsum</h2>
         <h3>lorem ipsum loremipsum</h3>
         <div class="btn-box">
@@ -72,7 +72,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.home {
+  height: 100vh;
+}
 .navbar-brand {
   display: inline-block;
   h1 {
@@ -113,7 +116,7 @@ export default {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgb(206, 208, 194), rgb(255, 255, 254));
-  clip-path: circle(20% at right 80%);
+  clip-path: circle(20% at right 65%);
 }
 .page-header {
   position: relative;
@@ -155,7 +158,9 @@ export default {
 }
 .hero-title {
   display: block;
+  width: 100%;
   text-transform: uppercase;
+  text-align: center;
   font-size: 6rem;
   color: rgb(255, 252, 228);
   font-weight: 700;

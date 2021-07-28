@@ -1,15 +1,21 @@
 <template>
   <div id="nav" class="app">
     <Header />
+    <div class="container">
+      <About />
+      <Technology />
+    </div>
   </div>
 </template>
 
 <script>
 import Header from '@/views/Header.vue'
+import About from '@/views/About.vue'
+import Technology from '@/views/Technology.vue'
 
 export default {
-  name: Header,
-  components: { Header },
+  name: 'App',
+  components: { Header, About, Technology },
 }
 </script>
 
