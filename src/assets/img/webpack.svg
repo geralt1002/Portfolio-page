@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.8 122.88"><defs></defs><title>webpack</title><path style="fill:url(#MyGradient);" d="M107.39,94.71l-49.8,28.17V100.94l31-17.07L107.39,94.7Zm3.41-3.09V32.71L92.58,43.24V81.11L110.8,91.62ZM3.41,94.71l49.8,28.17V100.94l-31-17.07L3.41,94.71ZM0,91.62V32.71L18.22,43.24V81.11L0,91.62ZM2.14,28.89,53.21,0V21.2l-32.73,18-.26.14L2.14,28.89Zm106.52,0L57.59,0V21.2l32.73,18,.26.15,18.08-10.45Z"/><path style="fill:url(#MyGradient2);" d="M53.21,96,22.59,79.1V45.75L53.21,63.43V96Zm4.38,0L88.21,79.12V45.75L57.59,63.43V96Zm-32.93-54L55.4,25,86.14,41.9,55.4,59.64,24.66,41.9Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><title>icon-square-small</title><path fill="url(#MyGradient)" d="M517.7 439.5L308.8 557.8v-92L439 394.1l78.7 45.4zm14.3-12.9V179.4l-76.4 44.1v159l76.4 44.1zM81.5 439.5l208.9 118.2v-92l-130.2-71.6-78.7 45.4zm-14.3-12.9V179.4l76.4 44.1v159l-76.4 44.1zm8.9-263.2L290.4 42.2v89l-137.3 75.5-1.1.6-75.9-43.9zm446.9 0L308.8 42.2v89L446 206.8l1.1.6 75.9-44z"/><path fill="url(#MyGradient2)" d="M290.4 444.8L162 374.1V234.2l128.4 74.1v136.5zm18.4 0l128.4-70.6v-140l-128.4 74.1v136.5zM299.6 303zm-129-85l129-70.9L428.5 218l-128.9 74.4-129-74.4z"/>
 <defs>
         <linearGradient id="MyGradient">
           <stop offset="5%" stop-color="#bbba96" />
@@ -9,4 +9,5 @@
           <stop offset="95%" stop-color="#bbba96" />
           <stop offset="5%" stop-color="#59d611" />
         </linearGradient>
-      </defs></svg>
+      </defs>
+</svg>

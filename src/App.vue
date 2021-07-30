@@ -1,7 +1,7 @@
 <template>
   <div id="nav" class="app">
     <Header />
-    <div class="container">
+    <div class="container-fluid">
       <About />
       <Technology />
     </div>

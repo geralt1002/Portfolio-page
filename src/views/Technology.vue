@@ -1,34 +1,118 @@
 <template>
   <div class="technology">
     <div class="row">
-      <div class="col-sm-12">
-        <img
-          class="img"
-          src="../assets/img/phone-tablet-and-laptop.svg"
-          alt=""
-        />
-
-        <img
-          class="img"
-          src="../assets/img/html-file-extension-interface.svg"
-          alt=""
-        />
-
-        <img class="img" src="../assets/img/css-file-format.svg" alt="" />
-
-        <img class="img" src="../assets/img/js.svg" alt="" />
-
-        <img class="img" src="../assets/img/vuejs.svg" alt="" />
-
-        <img class="img" src="../assets/img/sass.svg" alt="" />
-
-        <img class="img" src="../assets/img/bootstrap.svg" alt="" />
-
-        <img class="img" src="../assets/img/webpack.svg" alt="" />
-
-        <img class="img" src="../assets/img/gulp.svg" alt="" />
-
-        <img class="img" src="../assets/img/git.svg" alt="" />
+      <div class="col-sm-12 m-5">
+        <h2 class="section-headline">Technologie</h2>
+      </div>
+    </div>
+    <div class="row test">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img
+            src="../assets/img/html-file-extension-interface.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body mt-4">
+            <p class="card-text">HTML</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img
+            src="../assets/img/css-file-format.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body mt-4">
+            <p class="card-text">CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img src="../assets/img/js.svg" class="card-img-top" alt="..." />
+          <div class="card-body mt-4">
+            <p class="card-text">Javascript</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img src="../assets/img/vuejs.svg" class="card-img-top" alt="..." />
+          <div class="card-body mt-4">
+            <p class="card-text">Vue</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img src="../assets/img/sass.svg" class="card-img-top" alt="..." />
+          <div class="card-body mt-4">
+            <p class="card-text">Sass</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img
+            src="../assets/img/bootstrap.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body mt-4">
+            <p class="card-text">Bootstrap</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img src="../assets/img/gulp.svg" class="card-img-top" alt="..." />
+          <div class="card-body mt-4">
+            <p class="card-text">Gulp</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img src="../assets/img/webpack.svg" class="card-img-top" alt="..." />
+          <div class="card-body mt-4">
+            <p class="card-text">Webpack</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img
+            src="../assets/img/phone-tablet-and-laptop.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body mt-4">
+            <p class="card-text">RWD</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img src="../assets/img/git.svg" class="card-img-top" alt="..." />
+          <div class="card-body mt-4">
+            <p class="card-text">GIT</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
+        <div class="tech-item">
+          <img
+            src="../assets/img/wordpress.svg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body mt-4">
+            <p class="card-text">Wordpress</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -42,8 +126,66 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.img {
-  max-width: 8rem;
-  margin: 2rem;
+.test {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.section-headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-box {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  //   flex: 0 0 100%;
+  max-width: 100%;
+  //   height: 100%;
+}
+.tech-item {
+  width: 6rem;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+.card-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  align-items: flex-end;
+  vertical-align: bottom;
+}
+.card-img-top {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 5rem;
+  text-align: center;
+  //   margin: 0.5rem;
+  //   width: 100%;
+  //   height: 100%;
 }
 </style>
