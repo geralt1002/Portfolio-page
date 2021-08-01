@@ -1,13 +1,14 @@
 <template>
-  <div class="technology">
-    <div class="row">
-      <div class="col-sm-12 m-5">
-        <h2 class="section-headline">Technologie</h2>
+  <div class="technology-container">
+    <section class="section-headline row">
+      <div class="col-sm-12 mb-5 mt-5">
+        <h2 class="headline-text">Technologie</h2>
       </div>
-    </div>
-    <div class="row test">
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+    </section>
+
+    <section class="row section-tech-boxes mt-5 mb-5">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img
             src="../assets/img/html-file-extension-interface.svg"
             class="card-img-top"
@@ -18,8 +19,8 @@
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img
             src="../assets/img/css-file-format.svg"
             class="card-img-top"
@@ -30,34 +31,34 @@
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img src="../assets/img/js.svg" class="card-img-top" alt="..." />
           <div class="card-body mt-4">
             <p class="card-text">Javascript</p>
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img src="../assets/img/vuejs.svg" class="card-img-top" alt="..." />
           <div class="card-body mt-4">
             <p class="card-text">Vue</p>
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img src="../assets/img/sass.svg" class="card-img-top" alt="..." />
           <div class="card-body mt-4">
             <p class="card-text">Sass</p>
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img
-            src="../assets/img/bootstrap.svg"
+            src="../assets/img/bootstrap2.svg"
             class="card-img-top"
             alt="..."
           />
@@ -66,24 +67,24 @@
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img src="../assets/img/gulp.svg" class="card-img-top" alt="..." />
           <div class="card-body mt-4">
             <p class="card-text">Gulp</p>
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img src="../assets/img/webpack.svg" class="card-img-top" alt="..." />
           <div class="card-body mt-4">
             <p class="card-text">Webpack</p>
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img
             src="../assets/img/phone-tablet-and-laptop.svg"
             class="card-img-top"
@@ -94,16 +95,16 @@
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img src="../assets/img/git.svg" class="card-img-top" alt="..." />
           <div class="card-body mt-4">
             <p class="card-text">GIT</p>
           </div>
         </div>
       </div>
-      <div class="tech-box col-xl-1 col-lg-3 col-md-3 col-sm-4">
-        <div class="tech-item">
+      <div class="tech-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6">
+        <div class="box-item">
           <img
             src="../assets/img/wordpress.svg"
             class="card-img-top"
@@ -114,7 +115,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -126,15 +127,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.test {
+.headline-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.section-tech-boxes {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-items: center;
-}
-.section-headline {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -149,7 +151,7 @@ export default {
   max-width: 100%;
   //   height: 100%;
 }
-.tech-item {
+.box-item {
   width: 6rem;
   height: 100%;
   display: flex;
@@ -184,8 +186,5 @@ export default {
   margin: auto;
   max-width: 5rem;
   text-align: center;
-  //   margin: 0.5rem;
-  //   width: 100%;
-  //   height: 100%;
 }
 </style>

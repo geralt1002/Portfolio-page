@@ -1,57 +1,52 @@
 <template>
   <div class="home">
-    <header class="page-header">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" aria-current="page" to="/">
-            <h1>lorem ipsum <small>LOrem iPsum</small></h1>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            id="navbarNav"
-            class="collapse navbar-collapse justify-content-end"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                <a class="nav-link" aria-current="page" href="#home">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" to="#about">O mnie</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" to="#technology"
-                  >Technologie</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" to="#portfolio"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" to="#contact"
-                  >Kontakt</a
-                >
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" aria-current="page" to="/">
+          <h1>Krzysztof Umiński <small>front-end developer</small></h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          id="navbarNav"
+          class="collapse navbar-collapse justify-content-end"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" to="#about">O mnie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" to="#technology"
+                >Technologie</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" to="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" to="#contact">Kontakt</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <section class="row container-hero">
-      <div class="col-12 hero-box">
-        <h2 class="hero-title">Lorem Ipsum loremipsum</h2>
+      <div class="col-sm-12 hero-box">
+        <h2 class="hero-title">front-end developer</h2>
         <h3>lorem ipsum loremipsum</h3>
         <div class="btn-box">
           <a class="btn btn-primary" href="#contact">
@@ -76,25 +71,6 @@ export default {
 .home {
   height: 100vh;
 }
-.navbar-brand {
-  display: inline-block;
-  h1 {
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    color: rgb(255, 252, 228);
-  }
-  small {
-    display: block;
-    font-size: 1.3rem;
-  }
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  cursor: pointer;
-  &:hover {
-    color: rgb(89, 214, 17);
-  }
-}
 .home::after {
   content: '';
   position: absolute;
@@ -118,9 +94,32 @@ export default {
   background: linear-gradient(rgb(206, 208, 194), rgb(255, 255, 254));
   clip-path: circle(20% at right 65%);
 }
-.page-header {
+.navbar {
   position: relative;
   z-index: 2;
+  .navbar-brand {
+    display: inline-block;
+    h1 {
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      color: rgb(255, 252, 228);
+    }
+    small {
+      display: block;
+      font-size: 1.3rem;
+    }
+  }
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    color: rgb(89, 214, 17);
+  }
+}
+.row {
+  padding: 0;
+  margin: 0;
 }
 .container-hero {
   position: relative;
@@ -147,7 +146,6 @@ export default {
         font-size: 1.5rem;
         color: rgb(65, 68, 0);
         background: linear-gradient(rgb(89, 214, 17), rgb(187, 186, 150));
-        text-shadow: 2px 3px 3px #aa9600;
         &:hover {
           background: linear-gradient(rgb(187, 186, 150), rgb(89, 214, 17));
           color: rgb(65, 68, 0);
@@ -185,4 +183,5 @@ export default {
     background-position: 200% center;
   }
 }
+@import '../scss/header_media_query.scss';
 </style>
