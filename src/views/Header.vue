@@ -25,20 +25,40 @@
               <a class="nav-link" aria-current="page" href="#home">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" to="#about">O mnie</a>
+              <a
+                v-smooth-scroll
+                class="nav-link"
+                aria-current="page"
+                href="#about"
+                >O mnie</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" to="#technology"
+              <a
+                v-smooth-scroll
+                class="nav-link"
+                aria-current="page"
+                href="#technology"
                 >Technologie</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" to="#portfolio"
+              <a
+                v-smooth-scroll
+                class="nav-link"
+                aria-current="page"
+                href="#portfolio"
                 >Portfolio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" to="#contact">Kontakt</a>
+              <a
+                v-smooth-scroll
+                class="nav-link"
+                aria-current="page"
+                href="#contact"
+                >Kontakt</a
+              >
             </li>
           </ul>
         </div>
@@ -50,7 +70,7 @@
         <h3>lorem ipsum loremipsum</h3>
         <div class="btn-box">
           <a class="btn btn-primary" href="#contact">
-            <span>LoremLorem Ipsum</span>
+            <span>Skontaktuj się ze mną</span>
           </a>
         </div>
       </div>
@@ -59,10 +79,23 @@
 </template>
 
 <script>
+import { inject, ref } from 'vue'
 export default {
   name: 'Header',
   setup() {
-    return {}
+    const myEl = ref(null)
+    const smoothScroll = inject('smoothScroll')
+    const scrollToMyEl = () => {
+      smoothScroll({
+        scrollTo: myEl.value,
+        //   hash: {
+        //     contact: '#contact',
+        //     portfolio: '#portfolio',
+        //     technology: '#technology',
+        //   },
+      })
+    }
+    return { scrollToMyEl }
   },
 }
 </script>

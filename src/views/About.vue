@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div id="about" class="about">
     <section class="section-headline row mt-5 mb-5">
       <div class="col-sm-12">
         <h2 class="headline-text">O mnie</h2>

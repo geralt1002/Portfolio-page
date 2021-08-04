@@ -1,12 +1,12 @@
 <template>
-  <div class="contact-container">
+  <div id="contact" class="contact-container">
     <section class="section-headline row">
       <div class="col-sm-12 mb-3 mt-5">
         <h2 class="headline-text">Chcesz podjąć współpracę?</h2>
       </div>
     </section>
     <section class="contact-box row">
-      <div class="contact-item col-sm-12">
+      <div class="contact-item col-12">
         <p class="">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat
           error assumenda quidem dolor libero illum nulla accusamus nesciunt
@@ -14,7 +14,7 @@
         </p>
         <div class="btn-box">
           <a class="btn btn-primary" href="#contact">
-            <span>LoremLorem Ipsum</span>
+            <span>Napisz do mnie</span>
           </a>
         </div>
         <section class="section-contact">
@@ -84,6 +84,9 @@ export default {
   z-index: 2;
   height: 50vh;
   width: 100%;
+  p {
+    text-align: center;
+  }
 }
 .btn-box {
   display: flex;
@@ -112,11 +115,22 @@ export default {
     text-transform: uppercase;
     font-size: 1.2rem;
     margin-right: 2rem;
+    height: 4rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .social-icon-link {
     width: 2.2rem;
     height: 4rem;
-    margin: 0 0.5rem;
+    margin: 1rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
 }
+@import '../scss/contact_media_query.scss';
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="technology-container">
+  <div id="technology" class="technology-container">
     <section class="section-headline row">
       <div class="col-sm-12 mb-5 mt-5">
         <h2 class="headline-text">Technologie</h2>
