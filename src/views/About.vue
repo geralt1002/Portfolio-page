@@ -51,19 +51,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '..//scss/mixins/mixins_app.scss';
+
 .headline-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex_center;
   text-transform: uppercase;
 }
 .container-about {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 </style>

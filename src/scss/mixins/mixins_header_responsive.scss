@@ -1,0 +1,41 @@
+@mixin navbar_up_to_340_portait {
+  .navbar {
+    .navbar-brand {
+      h1 {
+        font-size: 1rem;
+      }
+      small {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+@mixin navbar_up_to_768_landscape {
+  .navbar {
+    .navbar-brand {
+      h1 {
+        font-size: 1.5rem;
+      }
+      small {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@mixin background_color_for_responsive_navbar {
+  .navbar-collapse {
+    background-color: #000;
+    border-radius: 2%;
+    .navbar-nav {
+      .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0.5rem;
+      }
+    }
+  }
+}

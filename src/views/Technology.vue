@@ -127,64 +127,32 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '../scss/mixins/mixins_app.scss';
+
 .headline-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex_center;
   text-transform: uppercase;
 }
 .section-tech-boxes {
-  display: flex;
-  justify-content: center;
+  @include flex_center;
   text-align: center;
-  align-items: center;
 }
 
 .tech-box {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  @include flex_center;
   text-align: center;
-  align-items: center;
   flex-direction: column;
-  //   flex: 0 0 100%;
   max-width: 100%;
-  //   height: 100%;
 }
 .box-item {
   width: 6rem;
   height: 100%;
-  display: flex;
+  margin-bottom: 1rem;
+  @include flex_center;
   text-align: center;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  height: 100%;
-}
-.card-body {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  align-items: flex-end;
-  vertical-align: bottom;
-}
-.card-text {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  align-items: flex-end;
-  vertical-align: bottom;
 }
 .card-img-top {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
   max-width: 5rem;
-  text-align: center;
 }
 </style>

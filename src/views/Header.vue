@@ -69,7 +69,7 @@
         <h2 class="hero-title">front-end developer</h2>
         <h3>lorem ipsum loremipsum</h3>
         <div class="btn-box">
-          <a class="btn btn-primary" href="#contact">
+          <a v-smooth-scroll class="btn btn-primary" href="#contact">
             <span>Skontaktuj się ze mną</span>
           </a>
         </div>
@@ -101,6 +101,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/mixins/mixins_app.scss';
+
 .home {
   height: 100vh;
 }
@@ -161,18 +163,13 @@ export default {
   display: flex;
   justify-content: center;
   .hero-box {
-    height: auto;
     align-content: center;
     align-self: center;
     h3 {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-self: center;
+      @include flex_center;
     }
     .btn-box {
-      display: flex;
-      justify-content: center;
+      @include flex_center;
       padding-top: 3rem;
       .btn-primary {
         padding: 1.5rem;
@@ -201,8 +198,6 @@ export default {
     rgb(194, 211, 7) 50%,
     rgb(187, 186, 150) 60%
   );
-  background-size: auto auto;
-  background-clip: border-box;
   background-size: 200% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;

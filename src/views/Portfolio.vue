@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row portfolio-box mt-5 mb-5">
-      <div class="box-item col-xl-4 col-lg-4 col-md-3 col-sm-12">
+      <div class="box-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="card">
           <img
             src="../assets/img/laptop-336378_1920.jpg"
@@ -15,7 +15,7 @@
           />
         </div>
       </div>
-      <div class="box-item col-xl-4 col-lg-4 col-md-3 col-sm-12">
+      <div class="box-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="card">
           <img
             src="../assets/img/laptop-336378_1920.jpg"
@@ -24,7 +24,7 @@
           />
         </div>
       </div>
-      <div class="box-item col-xl-4 col-lg-4 col-md-3 col-sm-12">
+      <div class="box-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="card">
           <img
             src="../assets/img/laptop-336378_1920.jpg"
@@ -33,7 +33,7 @@
           />
         </div>
       </div>
-      <div class="box-item col-xl-4 col-lg-4 col-md-3 col-sm-12">
+      <div class="box-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="card">
           <img
             src="../assets/img/laptop-336378_1920.jpg"
@@ -42,7 +42,7 @@
           />
         </div>
       </div>
-      <div class="box-item col-xl-4 col-lg-4 col-md-3 col-sm-12">
+      <div class="box-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
         <div class="card">
           <img
             src="../assets/img/laptop-336378_1920.jpg"
@@ -51,12 +51,14 @@
           />
         </div>
       </div>
-      <div class="box-item col-xl-4 col-lg-4 col-md-3 col-sm-12">
-        <img
-          src="../assets/img/laptop-336378_1920.jpg"
-          class="card-img-top"
-          alt="..."
-        />
+      <div class="box-item col-xl-4 col-lg-4 col-md-6 col-sm-12">
+        <div class="card">
+          <img
+            src="../assets/img/laptop-336378_1920.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -70,14 +72,22 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '../scss/mixins/mixins_app.scss';
+
 .headline-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex_center;
   text-transform: uppercase;
 }
-.box-item {
-  padding: 0;
-  margin: 0;
+.portfolio-box {
+  @include flex_center;
+  .box-item {
+    @include flex_center;
+    padding: 0;
+    margin: 0;
+    //  max-width: 30rem;
+    .card {
+      margin: 0.5rem;
+    }
+  }
 }
 </style>
