@@ -151,8 +151,22 @@ export default {
   @include flex_center;
   text-align: center;
   flex-direction: column;
-}
-.card-img-top {
-  max-width: 5rem;
+  .card-img-top {
+    max-width: 5rem;
+    transform: translateY(0);
+    transition: all 0.3s ease 0s;
+  }
+  .card-text {
+    transform: translateY(0);
+    transition: all 0.3s ease 0s;
+  }
+  &:hover {
+    .card-img-top {
+      transform: translateY(1rem);
+    }
+    .card-text {
+      transform: translateY(-1rem);
+    }
+  }
 }
 </style>

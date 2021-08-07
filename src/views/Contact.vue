@@ -16,7 +16,7 @@
           nostrum.
         </p>
         <div class="btn-box">
-          <a class="btn btn-primary" href="#contact">
+          <a class="btn btn-primary" href="mailto:krzysztof.uminski1@gmail.com">
             <span>Napisz do mnie</span>
           </a>
         </div>
