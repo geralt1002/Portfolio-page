@@ -3,7 +3,7 @@
     <header class="page-header">
       <Header />
     </header>
-    <main class="container-fluid">
+    <main class="page-main">
       <About />
       <Technology />
       <Portfolio />

@@ -67,7 +67,7 @@
     <section class="row container-hero">
       <div class="col-sm-12 hero-box">
         <h2 class="hero-title">front-end developer</h2>
-        <h3>lorem ipsum loremipsum</h3>
+        <h3>Tworzę strony i aplikacje internetowe</h3>
         <div class="btn-box">
           <a v-smooth-scroll class="btn btn-primary" href="#contact">
             <span>Skontaktuj się ze mną</span>
@@ -88,11 +88,6 @@ export default {
     const scrollToMyEl = () => {
       smoothScroll({
         scrollTo: myEl.value,
-        //   hash: {
-        //     contact: '#contact',
-        //     portfolio: '#portfolio',
-        //     technology: '#technology',
-        //   },
       })
     }
     return { scrollToMyEl }
@@ -167,6 +162,7 @@ export default {
     align-self: center;
     h3 {
       @include flex_center;
+      text-align: center;
     }
     .btn-box {
       @include flex_center;

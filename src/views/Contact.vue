@@ -4,16 +4,12 @@
       <div class="col-sm-12 mb-3 mt-5">
         <h2 class="headline-text">Chcesz podjąć współpracę?</h2>
       </div>
-      <!-- <div>
-        <img class="background-img" src="../assets/img/background.svg" alt="" />
-      </div> -->
     </section>
     <section class="contact-box row">
       <div class="contact-item col-12">
         <p class="">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet placeat
-          error assumenda quidem dolor libero illum nulla accusamus nesciunt
-          nostrum.
+          Jeśli chcesz mnie zatrudnić, pisz na adres
+          <span>krzysztof.uminski1@gmail.com</span>
         </p>
         <div class="btn-box">
           <a class="btn btn-primary" href="mailto:krzysztof.uminski1@gmail.com">
@@ -71,12 +67,15 @@ export default {
 .contact-item {
   @include flex_center;
   flex-direction: column;
-  //   position: relative;
   z-index: 2;
   height: 50vh;
   width: 100%;
   p {
     text-align: center;
+    span {
+      text-decoration: underline;
+      font-weight: 600;
+    }
   }
 }
 .btn-box {
