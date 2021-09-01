@@ -5,7 +5,7 @@
     </header>
     <main class="page-main">
       <About />
-      <Technology />
+      <Technologies />
       <Portfolio />
     </main>
     <footer class="page-footer container-fluid">
@@ -17,13 +17,13 @@
 <script>
 import Header from '@/views/Header.vue'
 import About from '@/views/About.vue'
-import Technology from '@/views/Technology.vue'
+import Technologies from '@/views/Technologies.vue'
 import Portfolio from '@/views/Portfolio.vue'
 import Contact from '@/views/Contact.vue'
 
 export default {
   name: 'App',
-  components: { Header, About, Technology, Portfolio, Contact },
+  components: { Header, About, Technologies, Portfolio, Contact },
 }
 </script>
 
