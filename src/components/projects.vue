@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="box-item--hover">
-      <div class="item-heading">
+      <div class="item-heading mt-3">
         <h3 class="heading-title--hover">{{ title }}</h3>
         <p class="heading-desc--hover">
           {{ description }}
@@ -30,11 +30,7 @@
       <p class="item-tech--hover">{{ technology }}</p>
     </div>
     <div class="card">
-      <img
-        src="../assets/img/laptop-336378_1920.jpg"
-        class="card-img-top"
-        alt="..."
-      />
+      <img :src="image" class="card-img-top" alt="..." />
     </div>
   </div>
 </template>
@@ -59,6 +55,10 @@ export default {
       required: true,
     },
     technology: {
+      type: String,
+      required: true,
+    },
+    image: {
       type: String,
       required: true,
     },
@@ -91,6 +91,12 @@ export default {
           height: 100%;
           @include flex_center;
           flex-direction: column;
+          .heading-title--hover {
+            font-size: 2rem;
+          }
+          .heading-desc--hover {
+            font-size: 1.4rem;
+          }
         }
         .link-to-prewiev {
           height: 100%;
@@ -99,7 +105,6 @@ export default {
             cursor: pointer;
             .social-icon-link {
               width: 2.2rem;
-              height: 4rem;
               @include flex_center;
             }
           }
@@ -115,6 +120,7 @@ export default {
         .item-tech--hover {
           height: 100%;
           text-align: center;
+          font-size: 1.4rem;
           @include flex_center;
           align-items: flex-end;
         }
@@ -142,12 +148,14 @@ export default {
         flex-direction: column;
         .heading-title--hover {
           height: 100%;
+          font-size: 2rem;
           @include flex_center;
           align-items: center;
           text-align: center;
         }
         .heading-desc--hover {
           margin: 0 2rem;
+          font-size: 1.4rem;
           text-align: center;
         }
       }
@@ -171,6 +179,7 @@ export default {
       }
       .item-tech--hover {
         height: 100%;
+        font-size: 1.4rem;
         @include flex_center;
         align-items: flex-end;
       }
@@ -180,4 +189,5 @@ export default {
     }
   }
 }
+@import '../scss/portfolio_media_query.scss';
 </style>

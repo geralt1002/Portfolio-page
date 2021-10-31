@@ -33,6 +33,7 @@ export default {
   flex-direction: column;
   max-width: 100%;
   .box-item {
+    z-index: 2;
     width: 6rem;
     height: 100%;
     margin-bottom: 1rem;
@@ -47,6 +48,7 @@ export default {
     .card-text {
       transform: translateY(0);
       transition: all 0.3s ease 0s;
+      font-size: 1.1rem;
     }
     &:hover {
       .card-img-top {
@@ -58,4 +60,5 @@ export default {
     }
   }
 }
+@import '../scss/skills_media_query.scss';
 </style>

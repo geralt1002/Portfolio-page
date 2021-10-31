@@ -14,6 +14,7 @@
         :github="object.github"
         :live="object.live"
         :technology="object.technology"
+        :image="object.image"
         class="box-item"
         :class="
           projects.length < 5
@@ -26,7 +27,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import projects from '@/components/projects.vue'
 
 export default {
@@ -42,6 +42,7 @@ export default {
         github: 'https://github.com/geralt1002',
         live: 'https://github.com/geralt1002',
         technology: 'HTML / SCSS / VUE',
+        image: require('@/assets/img/portfolio.jpg'),
       },
       {
         id: 2,
@@ -51,6 +52,7 @@ export default {
         github: 'https://geralt1002.github.io/Weather-app-vue.js/',
         live: 'https://github.com/geralt1002/Weather-app-vue.js',
         technology: 'HTML / SCSS / VUE',
+        image: require('@/assets/img/weather-app.jpg'),
       },
       {
         id: 3,
@@ -58,8 +60,9 @@ export default {
         description:
           'Aplikacja pozwalająca na tworzenie notatek w formacie Markdown',
         github: 'https://geralt1002.github.io/notes-app/',
-        live: 'https://github.com/geralt1002/notes-app',
-        technology: 'HTML / CSS / JS',
+        live: 'https://simple-notesapp.herokuapp.com/',
+        technology: 'Vue 3 / SCSS / Node.js / Express.js / MongoDB',
+        image: require('@/assets/img/notes-app.jpg'),
       },
       {
         id: 4,
@@ -69,6 +72,7 @@ export default {
         github: 'https://geralt1002.github.io/Meme-Generator/dist/',
         live: 'https://github.com/geralt1002/Meme-Generator',
         technology: 'HTML / CSS / JS',
+        image: require('@/assets/img/meme_generator.jpg'),
       },
     ]
     return { projects }

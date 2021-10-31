@@ -97,7 +97,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '../scss/mixins/mixins_app.scss';
-
 .home {
   height: 100vh;
 }
@@ -169,7 +168,7 @@ export default {
       padding-top: 3rem;
       .btn-primary {
         padding: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: rgb(65, 68, 0);
         background: linear-gradient(rgb(89, 214, 17), rgb(187, 186, 150));
         &:hover {

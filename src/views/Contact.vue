@@ -72,6 +72,7 @@ export default {
   width: 100%;
   p {
     text-align: center;
+    font-size: 1.3rem;
     span {
       text-decoration: underline;
       font-weight: 600;
@@ -83,7 +84,7 @@ export default {
   padding-top: 3rem;
   .btn-primary {
     padding: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgb(65, 68, 0);
     background: linear-gradient(rgb(89, 214, 17), rgb(187, 186, 150));
 

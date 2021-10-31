@@ -1,3 +1,4 @@
+@import './variables';
 @import '../scss/mixins/mixins_header_responsive.scss';
 
 /*********CUSTOM BREAKPOINT**********/
@@ -20,7 +21,7 @@
         .btn-box {
           .btn-primary {
             padding: 0.7rem;
-            font-size: 0.9rem;
+            font-size: $button_to_340;
           }
         }
       }
@@ -48,7 +49,7 @@
         .btn-box {
           .btn-primary {
             padding: 0.7rem;
-            font-size: 0.9rem;
+            font-size: $button_to_340;
           }
         }
       }
@@ -76,7 +77,7 @@
         .btn-box {
           .btn-primary {
             padding: 1rem;
-            font-size: 1rem;
+            font-size: $button_to_340;
           }
         }
       }
@@ -89,16 +90,17 @@
     margin-bottom: 25rem;
     height: 50vh;
   }
-  .navbar {
-    .navbar-brand {
-      h1 {
-        font-size: 1.2rem;
-      }
-      small {
-        font-size: 0.6rem;
-      }
-    }
-  }
+  @include navbar_up_to_340_portait;
+  // .navbar {
+  //   .navbar-brand {
+  //     h1 {
+  //       font-size: 1.2rem;
+  //     }
+  //     small {
+  //       font-size: 0.6rem;
+  //     }
+  //   }
+  // }
 
   @include background_color_for_responsive_navbar;
 
@@ -115,7 +117,7 @@
       .btn-box {
         .btn-primary {
           padding: 1rem;
-          font-size: 1rem;
+          font-size: $button_to_340;
         }
       }
     }
@@ -131,7 +133,6 @@
     @include background_color_for_responsive_navbar;
 
     .container-hero {
-      // height: 75rem;
       .hero-box {
         .hero-title {
           font-size: 3rem;
@@ -139,7 +140,7 @@
         .btn-box {
           .btn-primary {
             padding: 1rem;
-            font-size: 1rem;
+            font-size: $button_to_576;
           }
         }
       }
@@ -151,7 +152,7 @@
   .btn-box {
     .btn-primary {
       padding: 1rem;
-      font-size: 1rem;
+      font-size: $button_to_576;
     }
   }
 }
@@ -173,7 +174,7 @@
         .btn-box {
           .btn-primary {
             padding: 1.4rem;
-            font-size: 1.3rem;
+            font-size: $button_to_576;
           }
         }
       }
@@ -199,7 +200,7 @@
         .btn-box {
           .btn-primary {
             padding: 1rem;
-            font-size: 1.3rem;
+            font-size: $button_to_576;
           }
         }
       }
@@ -224,7 +225,7 @@
       .btn-box {
         .btn-primary {
           padding: 1.4rem;
-          font-size: 1.3rem;
+          font-size: $button_to_1200;
         }
       }
     }
@@ -247,7 +248,7 @@
         .btn-box {
           .btn-primary {
             padding: 1.4rem;
-            font-size: 1.3rem;
+            font-size: $button_to_1200;
           }
         }
       }
@@ -280,7 +281,7 @@
       .btn-box {
         .btn-primary {
           padding: 1.4rem;
-          font-size: 1.3rem;
+          font-size: $button_to_1200;
         }
       }
     }
@@ -288,11 +289,35 @@
 }
 @media (min-width: 767px) and (max-width: 992px) and (orientation: portrait) {
   .home {
-    margin-bottom: -10rem !important;
+    @include navbar_up_to_1200_landscape;
+    margin-bottom: -10rem;
     //  height: 100vh !important;
   }
+  .navbar {
+    .navbar-brand {
+      h1 {
+        font-size: 2rem;
+      }
+      small {
+        font-size: 1.3rem;
+      }
+    }
+  }
   @include background_color_for_responsive_navbar;
-
+  .container-hero {
+    //  height: 20rem;
+    .hero-box {
+      .hero-title {
+        font-size: 4rem;
+      }
+      .btn-box {
+        .btn-primary {
+          padding: 1.4rem;
+          font-size: $button_to_1200;
+        }
+      }
+    }
+  }
   .btn-box {
     .btn-primary {
       padding: 1.4rem;
@@ -308,12 +333,13 @@
   .btn-box {
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait) {
   .home {
+    @include navbar_up_to_1200_landscape;
     //  margin-bottom: 20rem;
     height: 50vh;
     .container-hero {
@@ -326,7 +352,7 @@
           .btn-box {
             .btn-primary {
               padding: 1.4rem;
-              font-size: 1.3rem;
+              font-size: $button_to_1200;
             }
           }
         }

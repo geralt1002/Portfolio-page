@@ -1,0 +1,31 @@
+@import './variables';
+
+@media (max-width: 300px) and (orientation: portrait) {
+  .technologies-box {
+    .box-item {
+      .card-img-top {
+        max-width: 4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 301px) and (max-width: 340px) and (orientation: portrait) {
+  .technologies-box {
+    .box-item {
+      .card-img-top {
+        max-width: 4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 301px) and (max-width: 340px) and (orientation: landscape) {
+  .technologies-box {
+    .box-item {
+      .card-img-top {
+        max-width: 4rem;
+      }
+    }
+  }
+}

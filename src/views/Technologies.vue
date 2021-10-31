@@ -61,13 +61,13 @@ export default {
       },
       {
         id: 7,
-        title: 'Gulp',
-        image: require('@/assets/img/gulp.svg'),
+        title: 'Webpack',
+        image: require('@/assets/img/webpack.svg'),
       },
       {
         id: 8,
-        title: 'Webpack',
-        image: require('@/assets/img/webpack.svg'),
+        title: 'Gulp',
+        image: require('@/assets/img/gulp.svg'),
       },
       {
         id: 9,

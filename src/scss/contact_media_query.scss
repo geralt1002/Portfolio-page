@@ -1,19 +1,25 @@
+@import './variables';
 /*********CUSTOM BREAKPOINT**********/
 
 @media (max-width: 300px) and (orientation: portrait) {
   .section-headline {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_340;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 0.7rem;
-      font-size: 0.9rem;
+      font-size: $button_to_340;
     }
   }
   .section-contact {
     p {
-      font-size: 0.7rem;
+      font-size: $paragraph_to_340;
     }
     .social-icon-link {
       width: 1.3rem;
@@ -26,18 +32,23 @@
 
 @media (min-width: 301px) and (max-width: 340px) and (orientation: portrait) {
   .section-headline {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_340;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 0.7rem;
-      font-size: 0.9rem;
+      font-size: $button_to_340;
     }
   }
   .section-contact {
     p {
-      font-size: 0.7rem;
+      font-size: $paragraph_to_340;
     }
     .social-icon-link {
       width: 1.3rem;
@@ -47,18 +58,23 @@
 
 @media (min-width: 301px) and (max-width: 340px) and (orientation: landscape) {
   .section-headline {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_340;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1rem;
-      font-size: 1rem;
+      font-size: $button_to_340;
     }
   }
   .section-contact {
     p {
-      font-size: 0.7rem;
+      font-size: $paragraph_to_340;
     }
     .social-icon-link {
       width: 1.3rem;
@@ -68,18 +84,23 @@
 
 @media (min-width: 341px) and (max-width: 380px) and (orientation: portrait) {
   .section-headline {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_576;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1rem;
-      font-size: 1rem;
+      font-size: $button_to_576;
     }
   }
   .section-contact {
     p {
-      font-size: 0.7rem;
+      font-size: $paragraph_to_576;
     }
     .social-icon-link {
       width: 1.3rem;
@@ -88,18 +109,23 @@
 }
 @media (min-width: 341px) and (max-width: 380px) and (orientation: landscape) {
   .section-headline {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_576;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_576;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_576;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -109,18 +135,23 @@
 
 @media (min-width: 381px) and (max-width: 576px) and (orientation: portrait) {
   .section-headline {
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_576;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_576;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_576;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -132,18 +163,23 @@
 
 @media (min-width: 381px) and (max-width: 576px) and (orientation: landscape) {
   .section-headline {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_576;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1rem;
-      font-size: 1.3rem;
+      font-size: $button_to_576;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_576;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -153,18 +189,23 @@
 
 @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
   .section-headline {
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_1200;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_1200;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -176,16 +217,21 @@
   .section-headline {
     margin-bottom: 10rem;
   }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_1200;
+    }
+  }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_1200;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -195,18 +241,23 @@
 
 @media (min-width: 767px) and (max-width: 992px) and (orientation: portrait) {
   .section-headline {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+  }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_1200;
+    }
   }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_1200;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -218,16 +269,21 @@
   .section-headline {
     margin-bottom: 10rem;
   }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_1200;
+    }
+  }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_1200;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -239,16 +295,21 @@
   .section-headline {
     margin-bottom: 5rem;
   }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_1200;
+    }
+  }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_1200;
     }
     .social-icon-link {
       width: 1.7rem;
@@ -260,16 +321,21 @@
   .section-headline {
     margin-bottom: 5rem;
   }
+  .contact-item {
+    p {
+      font-size: $paragraph_to_1200;
+    }
+  }
   .btn-box {
     margin-bottom: 10rem;
     .btn-primary {
       padding: 1.4rem;
-      font-size: 1.3rem;
+      font-size: $button_to_1200;
     }
   }
   .section-contact {
     p {
-      font-size: 1rem;
+      font-size: $paragraph_to_1200;
     }
     .social-icon-link {
       width: 1.7rem;
