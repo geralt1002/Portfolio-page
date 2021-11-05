@@ -83,7 +83,7 @@ export default {
   @include flex_center;
   padding-top: 3rem;
   .btn-primary {
-    padding: 1.5rem;
+    padding: 1.2rem;
     font-size: 1.3rem;
     color: rgb(65, 68, 0);
     background: linear-gradient(rgb(89, 214, 17), rgb(187, 186, 150));
@@ -110,7 +110,7 @@ export default {
   .social-link {
     cursor: pointer;
     .social-icon-link {
-      width: 2.2rem;
+      max-width: 2.2rem;
       height: 4rem;
       margin: 1rem 0.5rem;
       @include flex_center;

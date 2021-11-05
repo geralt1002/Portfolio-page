@@ -6,7 +6,24 @@
       </div>
     </section>
     <section class="row mt-5 mb-5">
-      <div class="container-about col-sm-10"></div>
+      <div class="container-about col-sm-10">
+        <p>
+          <strong
+            >Zajmuję się kodowaniem stron i aplikacji internetowych.</strong
+          >
+        </p>
+        <p>
+          Posiadam wykształcenie informatyczne. Informatyka zawsze mnie
+          fascynowała. Po za programowaniem śledzę też nowinki z zakresu
+          bezpieczeństwa sieciowego oraz hardware-u. Stale poszerzam swoją
+          wiedzę w zakresie trendów i nowości w tej dziedzinie. Moje aplikacje
+          wykorzystują najnowocześniejsze technologie oraz są przystosowane do
+          wszystkich rozdzielczości. Przy tworzeniu kodu biorę pod uwagę takie
+          rzeczy jak standardy W3C, semantyka i optymalizacja kodu.
+        </p>
+
+        <p>Zapraszam do współpracy</p>
+      </div>
     </section>
   </div>
 </template>
@@ -30,4 +47,5 @@ export default {
   width: 100%;
   text-align: center;
 }
+@import '../scss/about_media_query';
 </style>

@@ -48,7 +48,7 @@ export default {
         id: 2,
         title: 'Pogodynka',
         description:
-          'Pozwala sprawdzić aktualną pogodę w każdym miejscu na świecie oraz wiele innym informacji pogodowych',
+          'Pozwala sprawdzić aktualną pogodę i inne informacje pogodowe',
         github: 'https://geralt1002.github.io/Weather-app-vue.js/',
         live: 'https://github.com/geralt1002/Weather-app-vue.js',
         technology: 'HTML / SCSS / VUE',
