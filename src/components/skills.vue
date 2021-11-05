@@ -48,7 +48,7 @@ export default {
     .card-text {
       transform: translateY(0);
       transition: all 0.3s ease 0s;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
     &:hover {
       .card-img-top {

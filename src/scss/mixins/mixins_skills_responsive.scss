@@ -1,0 +1,7 @@
+@import '../_variables';
+
+@mixin card-img-top_to_576 {
+  .card-img-top {
+    max-width: 4rem;
+  }
+}

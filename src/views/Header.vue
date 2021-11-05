@@ -206,5 +206,5 @@ export default {
     background-position: 200% center;
   }
 }
-@import '../scss/header_media_query.scss';
+@import '../scss/header_media_query';
 </style>

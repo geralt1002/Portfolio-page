@@ -1,81 +1,80 @@
 @import '../scss/variables';
+@import './mixins/_components/about_font_size.scss';
 
 @media (max-width: 300px) and (orientation: portrait) {
   .about {
     margin-top: 25rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
   }
 }
 @media (min-width: 301px) and (max-width: 340px) and (orientation: portrait) {
   .about {
-    // margin-top: 25rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
   }
 }
 @media (min-width: 301px) and (max-width: 340px) and (orientation: landscape) {
   .about {
-    // margin-top: 30rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
   }
 }
 @media (min-width: 341px) and (max-width: 380px) and (orientation: portrait) {
   .about {
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
   }
 }
 @media (min-width: 341px) and (max-width: 380px) and (orientation: landscape) {
   .about {
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
   }
 }
 @media (min-width: 381px) and (max-width: 576px) and (orientation: portrait) {
   .about {
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
   }
 }
 @media (min-width: 381px) and (max-width: 576px) and (orientation: landscape) {
   .about {
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
   .about {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
   .about {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) and (orientation: landscape) {
   .about {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
 }
 @media (min-width: 767px) and (max-width: 992px) and (orientation: portrait) {
   .about {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {
   .about {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) and (orientation: portrait) {
   .about {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
 }
 @media (min-width: 1201px) and (orientation: landscape) {
   .container-about {
-    font-size: $font_size_over_1200;
+    @include font_size_to_1200;
   }
 }
 
 @media (min-width: 1201px) and (orientation: portrait) {
   .container-about {
-    font-size: $font_size_over_1200;
+    @include font_size_to_1200;
   }
 }

@@ -1,11 +1,10 @@
 @import './variables';
+@import './mixins/mixins_skills_responsive';
 
 @media (max-width: 300px) and (orientation: portrait) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_340;
       }
@@ -16,9 +15,7 @@
 @media (min-width: 301px) and (max-width: 340px) and (orientation: portrait) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_340;
       }
@@ -29,9 +26,7 @@
 @media (min-width: 301px) and (max-width: 340px) and (orientation: landscape) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_340;
       }
@@ -42,9 +37,7 @@
 @media (min-width: 341px) and (max-width: 380px) and (orientation: portrait) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_576;
       }
@@ -54,9 +47,7 @@
 @media (min-width: 341px) and (max-width: 380px) and (orientation: landscape) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_576;
       }
@@ -66,9 +57,7 @@
 @media (min-width: 381px) and (max-width: 576px) and (orientation: portrait) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_576;
       }
@@ -78,9 +67,7 @@
 @media (min-width: 381px) and (max-width: 576px) and (orientation: landscape) {
   .technologies-box {
     .box-item {
-      .card-img-top {
-        max-width: 4rem;
-      }
+      @include card-img-top_to_576;
       .card-text {
         font-size: $font_size_to_576;
       }
@@ -137,15 +124,6 @@
     .box-item {
       .card-text {
         font-size: $font_size_to_1200;
-      }
-    }
-  }
-}
-@media (min-width: 1201px) and (orientation: portrait) {
-  .technologies-box {
-    .box-item {
-      .card-text {
-        font-size: $font_size_over_1200;
       }
     }
   }

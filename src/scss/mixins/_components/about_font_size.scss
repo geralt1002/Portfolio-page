@@ -1,0 +1,14 @@
+@import '../../variables';
+
+@mixin font_size_to_340 {
+  font-size: $font_size_to_340;
+}
+@mixin font_size_to_576 {
+  font-size: $font_size_to_576;
+}
+@mixin font_size_to_1200 {
+  font-size: $font_size_to_1200;
+}
+@mixin font_size_over_1200 {
+  font-size: $font_size_over_1200;
+}
