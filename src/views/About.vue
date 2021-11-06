@@ -22,7 +22,7 @@
           rzeczy jak standardy W3C, semantyka i optymalizacja kodu.
         </p>
 
-        <p>Zapraszam do współpracy</p>
+        <p>Zapraszam do współpracy.</p>
       </div>
     </section>
   </div>
@@ -46,6 +46,7 @@ export default {
 .container-about {
   width: 100%;
   text-align: center;
+  z-index: 3;
 }
 @import '../scss/about_media_query';
 </style>

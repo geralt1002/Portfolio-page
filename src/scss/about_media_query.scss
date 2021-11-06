@@ -1,5 +1,5 @@
 @import '../scss/variables';
-@import './mixins/_components/about_font_size.scss';
+@import './mixins/_components/font_size.scss';
 
 @media (max-width: 300px) and (orientation: portrait) {
   .about {
@@ -69,12 +69,12 @@
 }
 @media (min-width: 1201px) and (orientation: landscape) {
   .container-about {
-    @include font_size_to_1200;
+    @include font_size_over_1200;
   }
 }
 
 @media (min-width: 1201px) and (orientation: portrait) {
   .container-about {
-    @include font_size_to_1200;
+    @include font_size_over_1200;
   }
 }

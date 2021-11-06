@@ -5,3 +5,32 @@
     max-width: 4rem;
   }
 }
+@mixin technologies_box_to_340 {
+  .technologies-box {
+    .box-item {
+      @include card-img-top_to_576;
+      .card-text {
+        font-size: $font_size_to_340;
+      }
+    }
+  }
+}
+@mixin technologies_box_to_576 {
+  .technologies-box {
+    .box-item {
+      @include card-img-top_to_576;
+      .card-text {
+        font-size: $font_size_to_576;
+      }
+    }
+  }
+}
+@mixin technologies_box_to_1200 {
+  .technologies-box {
+    .box-item {
+      .card-text {
+        font-size: $font_size_to_1200;
+      }
+    }
+  }
+}

@@ -12,7 +12,6 @@
     }
   }
 }
-
 @mixin navbar_up_to_768_landscape {
   .navbar {
     .navbar-brand {
@@ -37,7 +36,6 @@
     }
   }
 }
-
 @mixin background_color_for_responsive_navbar {
   .navbar-collapse {
     background-color: #000;
@@ -49,6 +47,64 @@
         align-items: center;
         align-content: center;
         padding: 0.5rem;
+      }
+    }
+  }
+}
+@mixin container_hero_300 {
+  .container-hero {
+    height: 20rem;
+    .hero-box {
+      text-align: center;
+      .hero-title {
+        font-size: 1.5rem;
+      }
+      h3 {
+        font-size: $font_size_to_340;
+      }
+      .btn-box {
+        .btn-primary {
+          padding: 0.7rem;
+          font-size: $button_to_340;
+        }
+      }
+    }
+  }
+}
+@mixin hero_box_to_340 {
+  .hero-box {
+    text-align: center;
+    .hero-title {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: $font_size_to_340;
+    }
+    .btn-box {
+      @include button_to_340;
+    }
+  }
+}
+@mixin container_hero_to_576 {
+  .container-hero {
+    .hero-box {
+      .hero-title {
+        font-size: 3rem;
+      }
+      .btn-box {
+        @include button_to_576;
+      }
+    }
+  }
+}
+@mixin container_hero_to_1200 {
+  .container-hero {
+    .hero-box {
+      .hero-title {
+        font-size: 3rem;
+      }
+      .btn-box {
+        @include button_to_1200;
       }
     }
   }

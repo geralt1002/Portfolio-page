@@ -7,7 +7,7 @@
     </section>
     <section class="contact-box row">
       <div class="contact-item col-12">
-        <p class="">
+        <p>
           Jeśli chcesz mnie zatrudnić, pisz na adres
           <span>krzysztof.uminski1@gmail.com</span>
         </p>

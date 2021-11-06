@@ -1,85 +1,39 @@
 @import './variables';
 @import '../scss/mixins/mixins_header_responsive.scss';
 @import './mixins/_components/responsive_button';
+@import './mixins/_components/font_size';
 
 /*********CUSTOM BREAKPOINT**********/
 @media (max-width: 300px) and (orientation: portrait) {
   .home {
     margin-bottom: 20rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
     @include navbar_up_to_340_portait;
     @include background_color_for_responsive_navbar;
-
-    .container-hero {
-      height: 20rem;
-      .hero-box {
-        text-align: center;
-        .hero-title {
-          font-size: 1.5rem;
-        }
-        h3 {
-          font-size: $font_size_to_340;
-        }
-        .btn-box {
-          .btn-primary {
-            padding: 0.7rem;
-            font-size: $button_to_340;
-          }
-        }
-      }
-    }
+    @include container_hero_300;
   }
 }
 
 @media (max-width: 300px) and (orientation: landscape) {
   .home {
     margin-bottom: 20rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
     @include navbar_up_to_340_portait;
     @include background_color_for_responsive_navbar;
-
-    .container-hero {
-      height: 20rem;
-      .hero-box {
-        text-align: center;
-        .hero-title {
-          font-size: 1.5rem;
-        }
-        h3 {
-          font-size: $font_size_to_340;
-        }
-        .btn-box {
-          .btn-primary {
-            padding: 0.7rem;
-            font-size: $button_to_340;
-          }
-        }
-      }
-    }
+    @include container_hero_300;
   }
 }
 
 @media (min-width: 301px) and (max-width: 340px) and (orientation: portrait) {
   .home {
     margin-bottom: 10rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
     @include navbar_up_to_340_portait;
     @include background_color_for_responsive_navbar;
 
     .container-hero {
       height: 20rem;
-      .hero-box {
-        text-align: center;
-        .hero-title {
-          font-size: 1.5rem;
-        }
-        h3 {
-          font-size: $font_size_to_340;
-        }
-        .btn-box {
-          @include button_to_340;
-        }
-      }
+      @include hero_box_to_340;
     }
   }
 }
@@ -87,25 +41,14 @@
 @media (min-width: 301px) and (max-width: 340px) and (orientation: landscape) {
   .home {
     margin-bottom: 25rem;
-    font-size: $font_size_to_340;
+    @include font_size_to_340;
   }
   @include navbar_up_to_340_portait;
   @include background_color_for_responsive_navbar;
 
   .container-hero {
     height: 15rem;
-    .hero-box {
-      text-align: center;
-      .hero-title {
-        font-size: 1.5rem;
-      }
-      h3 {
-        font-size: $font_size_to_340;
-      }
-      .btn-box {
-        @include button_to_340;
-      }
-    }
+    @include hero_box_to_340;
   }
 }
 
@@ -113,20 +56,10 @@
   .home {
     margin-bottom: 20rem;
     height: 100vh;
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
     @include navbar_up_to_768_landscape;
     @include background_color_for_responsive_navbar;
-
-    .container-hero {
-      .hero-box {
-        .hero-title {
-          font-size: 3rem;
-        }
-        .btn-box {
-          @include button_to_576;
-        }
-      }
-    }
+    @include container_hero_to_576;
   }
 }
 
@@ -140,20 +73,10 @@
   .home {
     margin-bottom: 10rem;
     height: 100vh;
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
     @include navbar_up_to_768_landscape;
     @include background_color_for_responsive_navbar;
-
-    .container-hero {
-      .hero-box {
-        .hero-title {
-          font-size: 3rem;
-        }
-        .btn-box {
-          @include button_to_576;
-        }
-      }
-    }
+    @include container_hero_to_576;
   }
 }
 
@@ -162,54 +85,51 @@
 @media (min-width: 381px) and (max-width: 576px) and (orientation: landscape) {
   .home {
     margin-bottom: 35rem;
-    font-size: $font_size_to_576;
+    @include font_size_to_576;
     @include navbar_up_to_768_landscape;
     @include background_color_for_responsive_navbar;
-
-    .container-hero {
-      .hero-box {
-        .hero-title {
-          font-size: 3rem;
-        }
-        .btn-box {
-          @include button_to_576;
-        }
-      }
-    }
+    @include container_hero_to_576;
   }
 }
 
 @media (min-width: 577px) and (max-width: 768px) and (orientation: portrait) {
   .home {
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
   }
   @include navbar_up_to_768_landscape;
   @include background_color_for_responsive_navbar;
-
-  .container-hero {
-    .hero-box {
-      .hero-title {
-        font-size: 3rem;
-      }
-      .btn-box {
-        @include button_to_1200;
-      }
-    }
-  }
+  @include container_hero_to_1200;
 }
 
 @media (min-width: 577px) and (max-width: 768px) and (orientation: landscape) {
   .home {
     margin-bottom: 35rem;
     height: 100vh;
-    font-size: $font_size_to_1200;
+    @include font_size_to_1200;
     @include navbar_up_to_768_landscape;
     @include background_color_for_responsive_navbar;
-
+    @include container_hero_to_1200;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) and (orientation: landscape) {
+  .home {
+    @include background_color_for_responsive_navbar;
+    margin-bottom: 30rem;
+    @include font_size_to_1200;
+    .navbar {
+      .navbar-brand {
+        h1 {
+          font-size: 2.2rem;
+        }
+        small {
+          @include font_size_to_1200;
+        }
+      }
+    }
     .container-hero {
       .hero-box {
         .hero-title {
-          font-size: 3rem;
+          font-size: 4rem;
         }
         .btn-box {
           @include button_to_1200;
@@ -218,58 +138,30 @@
     }
   }
 }
-@media (min-width: 767px) and (max-width: 992px) and (orientation: landscape) {
-  .home {
-    margin-bottom: 30rem;
-    font-size: $font_size_to_1200;
-  }
-  .navbar {
-    .navbar-brand {
-      h1 {
-        font-size: 2.2rem;
-      }
-      small {
-        font-size: $font_size_to_1200;
-      }
-    }
-  }
-  @include background_color_for_responsive_navbar;
-
-  .container-hero {
-    .hero-box {
-      .hero-title {
-        font-size: 4rem;
-      }
-      .btn-box {
-        @include button_to_1200;
-      }
-    }
-  }
-}
 @media (min-width: 767px) and (max-width: 992px) and (orientation: portrait) {
   .home {
     @include navbar_up_to_1200_landscape;
+    @include background_color_for_responsive_navbar;
     margin-bottom: -10rem;
     font-size: $font_size_to_1200;
-  }
-  .navbar {
-    .navbar-brand {
-      h1 {
-        font-size: 2rem;
-      }
-      small {
-        font-size: $font_size_to_1200;
+    .navbar {
+      .navbar-brand {
+        h1 {
+          font-size: 2rem;
+        }
+        small {
+          font-size: $font_size_to_1200;
+        }
       }
     }
-  }
-  @include background_color_for_responsive_navbar;
-  .container-hero {
-    .hero-box {
-      .hero-title {
-        font-size: 4rem;
-      }
-      .btn-box {
-        @include button_to_1200;
+    .container-hero {
+      .hero-box {
+        .hero-title {
+          font-size: 4rem;
+        }
+        .btn-box {
+          @include button_to_1200;
+        }
       }
     }
   }
@@ -290,15 +182,18 @@
       }
     }
   }
+  .home::before {
+    height: 70%;
+  }
 }
 @media (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {
   .home {
     font-size: $font_size_to_1200;
-  }
-  .container-hero {
-    .hero-box {
-      .btn-box {
-        @include button_to_1200;
+    .container-hero {
+      .hero-box {
+        .btn-box {
+          @include button_to_1200;
+        }
       }
     }
   }
