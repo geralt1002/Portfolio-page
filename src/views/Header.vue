@@ -38,7 +38,7 @@
                 v-smooth-scroll
                 class="nav-link"
                 aria-current="page"
-                href="#technology"
+                href="#technologies"
                 >Technologie</a
               >
             </li>
