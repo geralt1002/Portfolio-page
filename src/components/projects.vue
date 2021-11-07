@@ -9,8 +9,8 @@
       </div>
       <div class="link-to-prewiev">
         <a
-          v-if="live"
-          :href="live"
+          v-if="github"
+          :href="github"
           class="social-link"
           target="_blank"
           rel="noopener noreferrer"
@@ -18,8 +18,8 @@
           <img class="social-icon-link" src="../assets/img/github.svg" alt="" />
         </a>
         <a
-          v-if="github"
-          :href="github"
+          v-if="live"
+          :href="live"
           class="link-live"
           target="_blank"
           rel="noopener noreferrer"
