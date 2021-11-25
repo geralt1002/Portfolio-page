@@ -12,7 +12,7 @@
         :key="item.id"
         :title="item.title"
         :image="item.image"
-        class="technologies-box col-xl-1 col-lg-3 col-md-6 col-sm-6 col-6"
+        class="technologies-box col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6"
       ></skills>
     </section>
   </div>
@@ -78,6 +78,16 @@ export default {
         id: 10,
         title: 'GIT',
         image: require('@/assets/img/git.svg'),
+      },
+      {
+        id: 11,
+        title: 'Node.js',
+        image: require('@/assets/img/nodejs-icon.svg'),
+      },
+      {
+        id: 12,
+        title: 'Wordpress',
+        image: require('@/assets/img/wordpress.svg'),
       },
     ]
     return { technologies }
