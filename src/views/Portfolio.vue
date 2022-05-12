@@ -5,7 +5,7 @@
         <h2 class="headline-text">Portfolio</h2>
       </div>
     </div>
-    <div class="row portfolio-box mt-5 mb-5">
+    <div class="row portfolio-box mt-5 mb-5 justify-content-center">
       <projects
         v-for="object in projects"
         :key="object.id"
@@ -28,15 +28,22 @@
 
 <script>
 import projects from '@/components/projects.vue'
-
 export default {
   name: 'Portfolio',
   components: { projects },
-
   setup() {
     const projects = [
       {
         id: 1,
+        title: 'Aplikacja Czat',
+        description: 'Prosta aplikacja czat',
+        github: 'https://github.com/geralt1002/Vue-Chat-App',
+        live: 'https://simple-vue-chat-app.herokuapp.com/',
+        technology: 'HTML / SCSS / VUE / SOCKET.IO / NODE.JS / MONGODB',
+        image: require('@/assets/img/chat-app.jpg'),
+      },
+      {
+        id: 2,
         title: 'Strona Wizytówka',
         description: 'Strona wizytówka, na którą teraz patrzysz',
         github: 'https://github.com/geralt1002/Portfolio-page',
@@ -45,7 +52,7 @@ export default {
         image: require('@/assets/img/portfolio.jpg'),
       },
       {
-        id: 2,
+        id: 3,
         title: 'Pogodynka',
         description:
           'Pozwala sprawdzić aktualną pogodę i inne informacje pogodowe',
@@ -55,17 +62,17 @@ export default {
         image: require('@/assets/img/weather-app.jpg'),
       },
       {
-        id: 3,
+        id: 4,
         title: 'Notatnik',
         description:
           'Aplikacja pozwalająca na tworzenie notatek w formacie Markdown',
         github: 'https://github.com/geralt1002/notes-app',
         live: 'https://simple-notesapp.herokuapp.com/',
-        technology: 'Vue 3 / SCSS / Node.js / Express.js / MongoDB',
+        technology: 'VUE / SCSS / EXPRESS.JS / MONGODB',
         image: require('@/assets/img/notes-app.jpg'),
       },
       {
-        id: 4,
+        id: 5,
         title: 'Meme Generator',
         description:
           'Prosta aplikacja pozawalająca na dodawanie napisów na dołączonym obrazie',
