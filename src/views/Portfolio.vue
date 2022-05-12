@@ -37,7 +37,7 @@ export default {
         id: 1,
         title: 'Aplikacja Czat',
         description: 'Prosta aplikacja czat',
-        github: 'https://github.com/geralt1002/Vue-Chat-App',
+        github: 'https://github.com/geralt1002/Simple-Vue-Chat',
         live: 'https://simple-vue-chat-app.herokuapp.com/',
         technology: 'HTML / SCSS / VUE / SOCKET.IO / NODE.JS / MONGODB',
         image: require('@/assets/img/chat-app.jpg'),
