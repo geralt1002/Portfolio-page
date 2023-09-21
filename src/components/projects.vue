@@ -37,6 +37,7 @@
 
 <script>
 export default {
+  name: 'ProjectsComponent',
   props: {
     title: {
       type: String,

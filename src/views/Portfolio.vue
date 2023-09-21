@@ -30,7 +30,7 @@
 import projects from '@/components/projects.vue'
 
 export default {
-  name: 'Portfolio',
+  name: 'PortfolioView',
   components: { projects },
 
   setup() {
@@ -40,7 +40,7 @@ export default {
         title: 'Aplikacja Czat',
         description: 'Prosta aplikacja czat',
         github: 'https://github.com/geralt1002/Simple-Vue-Chat',
-        live: 'https://simple-vue-chat-app.herokuapp.com/',
+        live: 'https://chat-app-lh2l.onrender.com/',
         technology: 'HTML / SCSS / VUE / SOCKET.IO / NODE.JS / MONGODB',
         image: require('@/assets/img/chat-app.jpg'),
       },
@@ -69,7 +69,7 @@ export default {
         description:
           'Aplikacja pozwalająca na tworzenie notatek w formacie Markdown',
         github: 'https://github.com/geralt1002/notes-app',
-        live: 'https://simple-notesapp.herokuapp.com/',
+        live: 'https://notes-app-k7v6.onrender.com/',
         technology: 'VUE / SCSS / EXPRESS.JS / MONGODB',
         image: require('@/assets/img/notes-app.jpg'),
       },

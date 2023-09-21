@@ -24,7 +24,7 @@
 import skills from '@/components/skills.vue'
 
 export default {
-  name: 'Technologies',
+  name: 'TechnologiesView',
   components: { skills },
 
   setup() {
@@ -86,6 +86,11 @@ export default {
       },
       {
         id: 12,
+        title: 'MongoDB',
+        image: require('@/assets/img/mongodb.svg'),
+      },
+      {
+        id: 13,
         title: 'Wordpress',
         image: require('@/assets/img/wordpress.svg'),
       },

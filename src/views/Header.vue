@@ -81,7 +81,7 @@
 <script>
 import { inject, ref } from 'vue'
 export default {
-  name: 'Header',
+  name: 'HeaderView',
   setup() {
     const myEl = ref(null)
     const smoothScroll = inject('smoothScroll')

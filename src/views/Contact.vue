@@ -53,7 +53,7 @@
 <script>
 // @ is an alias to /src
 export default {
-  name: 'Contact',
+  name: 'ContactView',
 }
 </script>
 <style lang="scss" scoped>
