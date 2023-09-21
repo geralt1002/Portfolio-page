@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <header class="page-header">
-      <Header />
+      <HeaderView />
     </header>
     <main class="page-main">
       <About />
@@ -15,15 +15,15 @@
 </template>
 
 <script>
-import Header from '@/views/Header.vue'
+import HeaderView from '@/views/Header.vue'
 import About from '@/views/About.vue'
 import Technologies from '@/views/Technologies.vue'
 import Portfolio from '@/views/Portfolio.vue'
 import Contact from '@/views/Contact.vue'
 
 export default {
-  name: 'App',
-  components: { Header, About, Technologies, Portfolio, Contact },
+  name: 'AppPage',
+  components: { HeaderView, About, Technologies, Portfolio, Contact },
 }
 </script>
 

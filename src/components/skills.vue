@@ -11,6 +11,7 @@
 
 <script>
 export default {
+  name: 'SkillsComponent',
   props: {
     title: {
       type: String,
