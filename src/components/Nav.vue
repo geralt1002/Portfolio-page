@@ -5,11 +5,11 @@
     role="navigation"
     aria-label="Główna nawigacja"
   >
-    <div class="container-fluid px-3">
+    <div class="container-fluid px-2 px-md-3">
       <a class="navbar-brand text-center text-lg-start" href="/" aria-label="Strona główna">
-        <p class="fw-bold mb-0 text-start text-uppercase font-p-bigger">
+        <p class="fw-bold mb-0 text-start text-uppercase font-p-big">
           Krzysztof Umiński
-          <small class="d-block font-p">front-end developer</small>
+          <small class="d-block font-p-small">front-end developer</small>
         </p>
       </a>
 
