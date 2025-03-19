@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-main {
+  padding: 1.2rem 2rem;
+  color: rgb(65, 68, 0);
+  background: linear-gradient(90deg, rgb(89, 214, 17), rgb(187, 186, 150));
+  background-size: 200% 200%;
+  transition:
+    background-position 0.5s ease-in-out,
+    color 0.5s ease-in-out;
+
+  &:hover {
+    background-position: 100% 50%;
+    color: rgb(65, 68, 0);
+  }
+  &:focus-visible {
+    outline: 1px solid #fff;
+  }
+}
+
+.font-h1 {
+  font-size: 6rem;
+}
+.font-h2 {
+  font-size: 2.5rem;
+}
+.font-h3 {
+  font-size: 2rem;
+}
+.font-h4 {
+  font-size: 1.5rem;
+}
+.font-h5 {
+  font-size: 1.3rem;
+}
+.font-h6 {
+  font-size: 1.1rem;
+}
+
+.font-p {
+  font-size: 1.1rem;
+}
+.font-p-small {
+  font-size: 0.8rem;
+}
+.font-p-smaller {
+  font-size: 0.7rem;
+}
+.font-p-big {
+  font-size: 1.3rem;
+}
+.font-p-bigger {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .font-h1 {
+    font-size: 3.5rem;
+  }
+  .font-h2 {
+    font-size: 3rem;
+  }
+  .font-h3 {
+    font-size: 2.5rem;
+  }
+  .font-h4 {
+    font-size: 2rem;
+  }
+  .font-h5 {
+    font-size: 1.5rem;
+  }
+  .font-h6 {
+    font-size: 1.3rem;
+  }
+
+  .font-p {
+    font-size: 1.2rem;
+  }
+  .font-p-small {
+    font-size: 0.9rem;
+  }
+  .font-p-smaller {
+    font-size: 0.8rem;
+  }
+  .font-p-big {
+    font-size: 1.4rem;
+  }
+  .font-p-bigger {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .font-h1 {
+    font-size: 3rem;
+  }
+  .font-h2 {
+    font-size: 2.5rem;
+  }
+  .font-h3 {
+    font-size: 2rem;
+  }
+  .font-h4 {
+    font-size: 1.5rem;
+  }
+  .font-h5 {
+    font-size: 1.3rem;
+  }
+  .font-h6 {
+    font-size: 1.1rem;
+  }
+
+  .font-p {
+    font-size: 1.1rem;
+  }
+  .font-p-small {
+    font-size: 0.8rem;
+  }
+  .font-p-smaller {
+    font-size: 0.7rem;
+  }
+  .font-p-big {
+    font-size: 1.3rem;
+  }
+  .font-p-bigger {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .font-h1 {
+    font-size: 2.5rem;
+  }
+  .font-h2 {
+    font-size: 2rem;
+  }
+  .font-h3 {
+    font-size: 1.5rem;
+  }
+  .font-h4 {
+    font-size: 1.3rem;
+  }
+  .font-h5 {
+    font-size: 1.1rem;
+  }
+  .font-h6 {
+    font-size: 1rem;
+  }
+
+  .font-p {
+    font-size: 1rem;
+  }
+  .font-p-small {
+    font-size: 0.8rem;
+  }
+  .font-p-smaller {
+    font-size: 0.7rem;
+  }
+  .font-p-big {
+    font-size: 1.3rem;
+  }
+  .font-p-bigger {
+    font-size: 1.5rem;
+  }
+}

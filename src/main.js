@@ -1,10 +1,16 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
-import VueSmoothScroll from 'vue3-smooth-scroll'
-import { createApp } from "vue";
-import "./registerServiceWorker";
-import router from "./router";
-import store from "./store";
-import App from "./App.vue";
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
 
-createApp(App).use(store).use(VueSmoothScroll).use(router).mount("#app");
+import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import VueSmoothScroll from 'vue3-smooth-scroll'
+
+import './scss/main.scss'
+
+const app = createApp(App)
+
+app.use(router)
+app.use(VueSmoothScroll)
+app.mount('#app')
